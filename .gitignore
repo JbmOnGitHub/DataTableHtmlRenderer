@@ -26,3 +26,6 @@
 # Ignore temporary files
 *.tmp
 *.temp
+
+# Ignore Claude Code tool files
+.claude/
