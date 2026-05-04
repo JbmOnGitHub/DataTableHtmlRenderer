@@ -148,6 +148,21 @@ var options = new DataTableHtmlRendererOptions
 string html = dataTable.ToHtmlTable(options);
 ```
 
+<details>
+<summary>Generated HTML</summary>
+
+```html
+<table class="table table-sm table-striped">
+  <thead><tr><th>Name</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Alice</td><td>OK</td><td>100.5</td></tr>
+    <tr><td>Bob</td><td>Error</td><td>-25</td></tr>
+  </tbody>
+</table>
+```
+
+</details>
+
 ### Conditional Row Class
 
 ```csharp
@@ -162,6 +177,21 @@ var options = new DataTableHtmlRendererOptions
     }
 };
 ```
+
+<details>
+<summary>Generated HTML</summary>
+
+```html
+<table>
+  <thead><tr><th>Name</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Alice</td><td>OK</td><td>100.5</td></tr>
+    <tr class="table-danger"><td>Bob</td><td>Error</td><td>-25</td></tr>
+  </tbody>
+</table>
+```
+
+</details>
 
 ### Conditional Cell Class
 
@@ -178,6 +208,21 @@ var options = new DataTableHtmlRendererOptions
     }
 };
 ```
+
+<details>
+<summary>Generated HTML</summary>
+
+```html
+<table>
+  <thead><tr><th>Name</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Alice</td><td>OK</td><td>100.5</td></tr>
+    <tr><td>Bob</td><td>Error</td><td class="text-danger">-25</td></tr>
+  </tbody>
+</table>
+```
+
+</details>
 
 ### Custom Header Text
 
@@ -196,6 +241,23 @@ var options = new DataTableHtmlRendererOptions
 };
 ```
 
+<details>
+<summary>Generated HTML</summary>
+
+When `DataColumn.Caption` is set (e.g. `Name` → `"Customer Name"`, `Status` → `"Order Status"`):
+
+```html
+<table>
+  <thead><tr><th>Customer Name</th><th>Order Status</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Alice</td><td>OK</td><td>100.5</td></tr>
+    <tr><td>Bob</td><td>Error</td><td>-25</td></tr>
+  </tbody>
+</table>
+```
+
+</details>
+
 ### Custom Cell Formatting
 
 ```csharp
@@ -211,6 +273,21 @@ var options = new DataTableHtmlRendererOptions
     }
 };
 ```
+
+<details>
+<summary>Generated HTML</summary>
+
+```html
+<table>
+  <thead><tr><th>Name</th><th>Price</th></tr></thead>
+  <tbody>
+    <tr><td>Widget A</td><td>$12.50</td></tr>
+    <tr><td>Widget B</td><td>$99.00</td></tr>
+  </tbody>
+</table>
+```
+
+</details>
 
 ## Culture and Formatting
 
@@ -418,10 +495,6 @@ The adapters return the appropriate type for each framework, allowing natural us
 - **ASP.NET Framework Adapter**: .NET Framework 4.6.2
 - **ASP.NET Adapter**: .NET Standard 2.0
 - **C# Version**: C# 7.0 (all code and examples are C# 7 compatible)
-
-## Implementation Plan
-
-The detailed implementation plan is available in [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md).
 
 ## Contributing
 

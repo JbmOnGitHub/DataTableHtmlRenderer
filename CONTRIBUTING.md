@@ -119,8 +119,7 @@ DataTableHtmlRenderer/
 ├── LICENSE                 # MIT License
 ├── README.md               # Project documentation
 ├── CONTRIBUTING.md         # This file
-├── docs/
-│   └── IMPLEMENTATION_PLAN.md  # Implementation plan
+├── guidance.md             # Developer guidance
 ├── src/
 │   ├── DataTableHtmlRenderer/          # Core package
 │   │   ├── DataTableHtmlRenderer.cs

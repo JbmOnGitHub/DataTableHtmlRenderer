@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Developer Guidance
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides developer guidance for working with code in this repository.
 
 ## Commands
 
@@ -27,7 +27,7 @@ This library renders `System.Data.DataTable` objects as HTML `<table>` strings. 
 - **`src/DataTableHtmlRenderer/`** — Core library (targets `netstandard2.0`). All rendering logic lives here.
 - **`src/DataTableHtmlRenderer.AspNetFx/`** — ASP.NET Framework adapter (`net462`). Adds `ToMvcHtmlString()` returning `IHtmlString`.
 - **`src/DataTableHtmlRenderer.AspNet/`** — ASP.NET Core adapter (`netstandard2.0`). Adds `ToHtmlContent()` returning `IHtmlContent`.
-- **`tests/DataTableHtmlRenderer.Tests/`** — xUnit test project (`netcoreapp3.1`).
+- **`tests/DataTableHtmlRenderer.Tests/`** — xUnit test project (`net8.0`).
 
 ### Core files
 

@@ -8,7 +8,8 @@
     <Authors>DataTableHtmlRenderer Contributors</Authors>
     <Description>Server-side HTML table renderer for System.Data.DataTable, designed for legacy ASP.NET migration scenarios and broad .NET compatibility.</Description>
     <PackageTags>datatable;html;table;aspnet;mvc;webforms;migration;netstandard</PackageTags>
-    <RepositoryUrl>https://github.com/example/DataTableHtmlRenderer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/JbmOnGitHub/DataTableHtmlRenderer</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

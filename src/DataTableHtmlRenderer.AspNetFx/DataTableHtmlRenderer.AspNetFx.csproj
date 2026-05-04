@@ -8,7 +8,8 @@
     <Authors>DataTableHtmlRenderer Contributors</Authors>
     <Description>ASP.NET Framework adapter for DataTableHtmlRenderer. Provides IHtmlString extensions for server-side HTML table rendering.</Description>
     <PackageTags>datatable;html;table;aspnet;mvc5;webforms;migration;netframework</PackageTags>
-    <RepositoryUrl>https://github.com/example/DataTableHtmlRenderer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/JbmOnGitHub/DataTableHtmlRenderer</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
