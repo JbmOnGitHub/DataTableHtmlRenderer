@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>DataTableHtmlRenderer.AspNet</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>DataTableHtmlRenderer Contributors</Authors>
+    <Description>ASP.NET adapter for DataTableHtmlRenderer. Provides IHtmlContent extensions for server-side HTML table rendering.</Description>
+    <PackageTags>datatable;html;table;aspnet;mvc;migration;netstandard</PackageTags>
+    <RepositoryUrl>https://github.com/example/DataTableHtmlRenderer</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSymbols>true</IncludeSymbols>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataTableHtmlRenderer\DataTableHtmlRenderer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

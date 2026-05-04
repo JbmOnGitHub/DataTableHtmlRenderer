@@ -1,0 +1,28 @@
+# Ignore bin and obj folders
+**/bin/
+**/obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore test results
+**/TestResults/
+
+# Ignore NuGet packages
+**/packages/
+
+# Ignore IDE-specific files
+.idea/
+.vs/
+*.suo
+*.cache
+
+# Ignore build output
+*.nupkg
+*.snupkg
+
+# Ignore temporary files
+*.tmp
+*.temp
