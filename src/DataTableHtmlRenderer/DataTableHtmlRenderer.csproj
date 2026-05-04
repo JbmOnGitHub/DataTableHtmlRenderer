@@ -4,7 +4,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>DataTableHtmlRenderer</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>DataTableHtmlRenderer Contributors</Authors>
     <Description>Server-side HTML table renderer for System.Data.DataTable, designed for legacy ASP.NET migration scenarios and broad .NET compatibility.</Description>
     <PackageTags>datatable;html;table;aspnet;mvc;webforms;migration;netstandard</PackageTags>
